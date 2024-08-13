@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+         body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            margin: 0;
+            padding: 0;}
+            h1{
+                color:rgb(237,31,41);
+            }
+            h1,form{
+                margin-left:5%;
+            }
+            /* label{
+                margin-top: 20px; 
+            } */
+            input[type="text"],
+        input[type="email"],
+        input[type="password"] {
+            width: 50%;
+            padding: 12px; 
+            margin-bottom: 1%; 
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            box-sizing: border-box;
+            font-size: 16px;
+            margin-top: 1%; 
+        }
+        hr{
+            width:3%;
+            margin-left:8%;
+        }
+        #signup{
+            background-color:rgb(237,31,41);
+            color:white;
+            border: none;
+            border-radius: 15px;
+            padding: 10px;
+        }
+        #signup:hover{
+            background-color: black;
+        }
+        a{
+            color:rgb(237,31,41);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Create Account</h1>
+    <hr>
+    <form method="post">
+        <label for="firstname">First Name</label><br>
+        <input type="text" id="firstname" name="firstname" placeholder="Enter your username" required><br>
+        <label for="laststname">Last Name</label><br>
+        <input type="text" id="lastname" name="lastname" placeholder="Enter your username" required><br>
+        <label for="email">Email*</label><br>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required><br>
+        <label for="password">Password*</label><br>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required><br>
+        <input type="submit" value="Sign Up" id="signup">
+        <!-- <p>* Indicates a required field</p> -->
+        <p class="returning-customer">Returning Customer? <a href="./login.html"> Translation missing: en.customer.register.sign_in</a></p>
+    </form>
+</body>
+</html>
+<script src="./signup.js"></script>

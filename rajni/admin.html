@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin</title>
+    <link rel="stylesheet" href="./admin.css">
+    <!-- Materials Icon -->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Sharp" rel="stylesheet">
+    <style>
+        .recent-orders img {
+            width: 100px; /* Adjust width here */
+            margin: auto;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <aside>
+            <div class="top">
+                <div class="logo">
+                    <img src="./logo.png" alt="logo">
+                    <h2 style="color:red">Speed UP</h2>
+                </div>
+                
+            </div> 
+
+            <div class="asidebar">
+                <a href="./admin.html" class="anchor active">
+                    <span class="material-icons-sharp">grid_view</span>  
+                    <h3>Dashboard</h3> 
+                </a>
+                <a href="./admin_customers.html" class="anchor">
+                    <span class="material-icons-sharp">person_outline</span>  
+                    <h3>Customers</h3> 
+                </a>
+                <a href="#" class="anchor">
+                    <span class="material-icons-sharp">receipt_long</span>  
+                    <h3>Orders</h3> 
+                </a>
+                <a href="./admin_products.html" class="anchor">
+                    <span class="material-icons-sharp">inventory</span>  
+                    <h3>Products</h3> 
+                </a>
+                <a href="./addproduct.html" class="anchor">
+                    <span class="material-icons-sharp">add</span>  
+                    <h3>Add Product</h3> 
+                </a>
+                <a href="./admin.html" class="anchor">
+                    <span class="material-icons-sharp">logout</span>  
+                    <h3>Logout</h3> 
+                </a>
+            </div>
+        </aside>
+        <!-- .......................END OF ASIDE............................ -->
+
+        <main>
+            <h1>DashBoard</h1>
+            <div class="date">
+                <input type="date">
+            </div>
+
+            <div class="insights">
+                <div class="sales">
+                    <span class="material-icons-sharp">analytics</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total Sales</h3>
+                            <h1>3,55,000</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="38"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>65%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Last 24 Hours</small>
+                </div>
+                 <!---------------------------END OF SALES------------------------------->
+                 <div class="expenses">
+                    <span class="material-icons-sharp">bar_chart</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total Expenses</h3>
+                            <h1>95,000</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="38"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>55%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Last 24 Hours</small>
+                </div>
+                 <!---------------------------END OF EXPENSES------------------------------->
+                 <div class="income">
+                    <span class="material-icons-sharp">stacked_line_chart</span>
+                    <div class="middle">
+                        <div class="left">
+                            <h3>Total Income</h3>
+                            <h1>5,00,000</h1>
+                        </div>
+                        <div class="progress">
+                            <svg>
+                                <circle cx="38" cy="38" r="38"></circle>
+                            </svg>
+                            <div class="number">
+                                <p>75%</p>
+                            </div>
+                        </div>
+                    </div>
+                    <small class="text-muted">Last 24 Hours</small>
+                </div>
+                 <!---------------------------END OF INCOME------------------------------->
+            </div>
+            
+             <div class="recent-orders">
+                <h2>Recent Orders</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Product Name</th>
+                            <th>Price</th>
+                            <th>Image</th>
+                        </tr>
+                    </thead>
+                    <tbody id="recentOrdersBody">
+                        <!-- Table rows will be dynamically added here -->
+                    </tbody>
+                </table>
+                <a href="#">Show All</a>
+            </div>
+        
+            <script>
+                // JSON data for recent orders
+                const recentOrders = [
+                    {
+                        "productName": "Super73 R Adventure Blackout SE",
+                        "price": "3795.00",
+                        "image": "https://boostedusa.com/cdn/shop/products/23YM_Z-Blackout_Right_fd46b813-d611-4ce4-ba56-fa67dc5c96a7_1600x.jpg?v=1697496329"
+                    },
+                    
+                     {
+                        "productName": "Super73 ZX Series",
+                        "price": "2995.00",
+                        "id": 11,
+                        "image": "https://boostedusa.com/cdn/shop/products/Calikites-LastMIle-SF-Super73_ZX_Moon_Rock_Three_Quarter_Masked_black_1600x.jpg?v=1680804955"
+                     },
+                    
+                    // Add more objects as needed
+                ];
+        
+                // Function to populate recent orders table
+                function populateRecentOrders() {
+                    const recentOrdersBody = document.getElementById('recentOrdersBody');
+                    recentOrders.forEach(order => {
+                        const row = document.createElement('tr');
+                        row.innerHTML = `
+                            <td>${order.productName}</td>
+                            <td>${order.price}</td>
+                            <td><img src="${order.image}" alt="${order.productName}"></td>
+                        `;
+                        recentOrdersBody.appendChild(row);
+                    });
+                }
+        
+                // Populate the recent orders table when the page loads
+                populateRecentOrders();
+            </script>
+            
+        
+            
+        </main>
+        <!-- -------------------------END OF MAIN---------------------------- -->
+       
+         
+       
+    </div>
+    <script src="./admin.js"></script>
+    <!-- <script src="./orderx.js"></script> -->
+</body>
+</html>

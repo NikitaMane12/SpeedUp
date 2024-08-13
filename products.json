@@ -1,0 +1,134 @@
+[
+	{
+		"id": 1,
+		"productName": "Micor USB Charging",
+		"price": "$7.99",
+		"images": [
+			{
+				"url": "https://boostedusa.com/cdn/shop/products/Remotecharger_400x.jpg?v=1610479399",
+				"color": "2 pin"
+			},
+			{
+				"url": "https://boostedusa.com/cdn/shop/files/USB1_200x.webp?v=1698260583",
+				"color": "#151611"
+			}
+		]
+	},
+
+	{
+		"id": 2,
+		"productName": "Evolve Nose Guard-GT/GTR",
+		"price": "$52.99",
+		"images": [
+			{
+				"url": "https://boostedusa.com/cdn/shop/products/kyson-dana-accessories-web-32_200x.jpg?v=1610482643",
+				"color": "#6e7074"
+			},
+            {
+				"url": "https://boostedusa.com/cdn/shop/products/Calikites-LastMileSF-Evolve-Electric-Skateboard-Noseguard-GT_e89c8c12-adc4-40eb-91d9-139b2706f003_200x.png?v=1646148456",
+				"color": "#2d2e34"
+			}
+		]
+	},
+
+	{
+		"id": 3,
+		"productName": "Boosted Loaded Caguama",
+		"price": "$69.99",
+		"images": [
+			{
+				"url": "https://boostedusa.com/cdn/shop/products/Orange01_200x.jpg?v=1610479904",
+				"color": "#fc6919"
+			},
+			{
+				"url": "https://boostedusa.com/cdn/shop/products/Blue01_200x.jpg?v=1610480005",
+				"color": "#81daec"
+			},
+			{
+				"url": "https://boostedusa.com/cdn/shop/products/Purple01_200x.jpg?v=1610479773",
+				"color": "#603362"
+			}
+		]
+	},
+	{
+		"id": 4,
+		"productName": "Boosted XR Battery",
+		"price": "$60.00",
+		"images": [
+			{
+				"url": "https://boostedusa.com/cdn/shop/products/Boosted-Standard-Range-Battery_200x.jpg?v=1610479045",
+				"color": "#2C88B3"
+			},
+			{
+				"url": "https://boostedusa.com/cdn/shop/products/Boosted-Extended-Range-Battery_1_200x.jpg?v=1610480721",
+				"color": "#505654"
+			}
+		]
+	},
+    {
+		"id": 5,
+		"productName": "Micor USB Charging",
+		"price": "$7.99",
+		"images": [
+			{
+				"url": "https://boostedusa.com/cdn/shop/products/Remotecharger_400x.jpg?v=1610479399",
+				"color": "2 pin"
+			},
+			{
+				"url": "https://boostedusa.com/cdn/shop/files/USB1_200x.webp?v=1698260583",
+				"color": "#151611"
+			}
+		]
+	},
+
+	{
+		"id": 6,
+		"productName": "Evolve Nose Guard-GT/GTR",
+		"price": "$52.99",
+		"images": [
+			{
+				"url": "https://boostedusa.com/cdn/shop/products/kyson-dana-accessories-web-32_200x.jpg?v=1610482643",
+				"color": "#6e7074"
+			},
+            {
+				"url": "https://boostedusa.com/cdn/shop/products/Calikites-LastMileSF-Evolve-Electric-Skateboard-Noseguard-GT_e89c8c12-adc4-40eb-91d9-139b2706f003_200x.png?v=1646148456",
+				"color": "#2d2e34"
+			}
+		]
+	},
+
+	{
+		"id": 7,
+		"productName": "Boosted Loaded Caguama",
+		"price": "$69.99",
+		"images": [
+			{
+				"url": "https://boostedusa.com/cdn/shop/products/Orange01_200x.jpg?v=1610479904",
+				"color": "#fc6919"
+			},
+			{
+				"url": "https://boostedusa.com/cdn/shop/products/Blue01_200x.jpg?v=1610480005",
+				"color": "#81daec"
+			},
+			{
+				"url": "https://boostedusa.com/cdn/shop/products/Purple01_200x.jpg?v=1610479773",
+				"color": "#603362"
+			}
+		]
+	},
+	{
+		"id": 8,
+		"productName": "Boosted XR Battery",
+		"price": "$60.00",
+		"images": [
+			{
+				"url": "https://boostedusa.com/cdn/shop/products/Boosted-Standard-Range-Battery_200x.jpg?v=1610479045",
+				"color": "#2C88B3"
+			},
+			{
+				"url": "https://boostedusa.com/cdn/shop/products/Boosted-Extended-Range-Battery_1_200x.jpg?v=1610480721",
+				"color": "#505654"
+			}
+		]
+	}
+]

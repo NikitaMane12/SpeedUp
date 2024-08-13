@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <style>
+        /* Basic CSS styling */
+        body {
+            font-family: Arial, sans-serif;
+            /* background-color: #f4f4f4; */
+            margin: 0;
+            padding: 0;
+            
+        }
+        form {
+            margin-top: 7%;
+            background-color: #fff;
+            margin-left: 45%;
+            
+        }
+        label {
+            margin-bottom: 10px;
+            display: block;
+            font-weight: bold;
+            font-size: 18px; /* increased label font size */
+        }
+        input[type="email"],
+        input[type="password"] {
+            width: 90%;
+            padding: 12px; /* increased input box padding */
+            margin-bottom: 20px; /* increased input box margin */
+            border: 1px solid #ccc;
+            border-radius: 6px; /* increased input box border radius */
+            box-sizing: border-box;
+            font-size: 16px; /* increased input box font size */
+        }
+        #login{
+            background-color:rgb(237,31,41);
+            color:white;
+            border: none;
+            border-radius: 15px;
+            padding: 10px;
+        }
+        #login:hover{
+            background-color: black;
+        }
+        h1{
+                color:rgb(237,31,41);
+            }
+            hr{
+            width:3%;
+            margin-left:8%;
+        }
+        a{
+            color:rgb(237,31,41);
+            text-decoration: none;
+        }
+    </style>
+</head>
+<body>
+    <h1>Admin Login</h1>
+    <hr>
+    <form method="post">
+        <!-- <h2>Sign In</h2> -->
+        
+        <label for="email">Email*</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <label for="password">Password*</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required><br>
+        <input type="submit" value="Login" id="login">
+        <!-- <p>New Customer? <a href="./signup.html">Sign up</a></p> -->
+    </form>
+</body>
+</html>
+<script src="./adminlogin.js"></script>

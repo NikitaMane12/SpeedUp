@@ -1,0 +1,902 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+
+
+.btn:hover {
+    background-color: gray;
+}
+
+
+
+.navbar {
+    width: auto;
+
+}
+
+.navbar-nav>.nav-item {
+    padding: 0 8px;
+}
+
+#logo {
+    color: #ed222a;
+    font-size: large;
+}
+
+.nav-item>a {
+    font-weight: 550;
+    font-size: 15px;
+    padding: 0 20px 0 20px;
+}
+
+.navItem:hover {
+    color: #ed222a;
+}
+
+.icon {
+    padding: 0 5px;
+
+}
+
+#section-2 {
+    height: 200vh;
+    width: auto;
+    /* border: 2px solid red; */
+    /* position: relative; */
+    margin-top: 12vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    >div:nth-child(1) {
+        background-image: url(https://boostedusa.com/cdn/shop/files/boosted-rev-electric-scooter-now-in-stock_c5926a3e-f2ff-46a9-9c91-97765798bac4_800x.jpg?v=1646159164);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 110%;
+        opacity: 0.5;
+        transition: background-size 0.5s;
+
+    }
+
+    >div:nth-child(1):hover {
+        background-size: 120%;
+    }
+
+    >div:nth-child(2) {
+        background-image: url(https://boostedusa.com/cdn/shop/files/Boosted-USA-Super-73-Home-Box-feature-600x544_800x.jpg?v=1680839620);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 130%;
+        opacity: 0.5;
+        transition: background-size 0.5s;
+
+        >button {
+            padding: 5px 20px 5px 20px;
+            border-radius: 10%;
+            color: white;
+            background-color: #ff4a32;
+            border: none;
+        }
+    }
+
+    >div:nth-child(2):hover {
+        background-size: 140%;
+    }
+
+    >div:nth-child(3) {
+        background-image: url(https://boostedusa.com/cdn/shop/files/evolve-electric-skateboard-now-in-stock_800x.jpg?v=1646159245);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 110%;
+        opacity: 0.5;
+        transition: background-size 0.5s;
+    }
+
+    >div:nth-child(3):hover {
+        background-size: 120%;
+    }
+
+    >div:nth-child(4) {
+        background-image: url(https://boostedusa.com/cdn/shop/files/minimotors-electric-scooters-2_800x.jpg?v=1655828690);
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: 150%;
+        opacity: 0.5;
+        transition: background-size 0.5s;
+    }
+
+    >div:nth-child(4):hover {
+        background-size: 160%;
+    }
+}
+
+#section-2>div {
+    /* border: 1px solid; */
+    height: 100vh;
+
+}
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+    #section-2 {
+        grid-template-columns: 1fr; /* Change to a single column layout */
+        height: auto; /* Adjust height as needed */
+        width: auto;
+    }
+    
+    #section-2>div {
+        height: auto; /* Adjust height as needed */
+        width: auto;
+    }
+    
+    #section-2>div:nth-child(1),
+    #section-2>div:nth-child(2),
+    #section-2>div:nth-child(3),
+    #section-2>div:nth-child(4) {
+        background-size: cover; /* Use cover for background images */
+    }
+}
+
+/* For screens between 768px and 1024px */
+@media (min-width: 769px) and (max-width: 1024px) {
+    #section-2 {
+        grid-template-columns: repeat(1, 1fr); /* Adjust columns */
+        height: auto;
+        width: auto;
+    }
+   
+}
+
+/* For screens larger than 1024px */
+@media (min-width: 1025px) {
+    #section-2 {
+        grid-template-columns: repeat(2, 1fr); /* Adjust columns */
+    }
+}
+
+#brand {
+    width: auto;
+    /* background-color: black; */
+    height: 10vh;
+    display: flex;
+    justify-content: center;
+    background-color: black;
+
+    >div {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        background-color: black;
+        /* border: 1px solid red; */
+        height: 10vh;
+        width: 70vw;
+    }
+}
+
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+    #brand{
+        height:auto;
+    }
+    #brand > div {
+        width: 90vw; /* Adjust width for smaller screens */
+        flex-wrap: wrap; /* Allow items to wrap to the next line */
+        justify-content: center; /* Center items */
+        height: auto;
+    }
+    
+    #brand > div > div {
+        margin: 10px; /* Add some margin between images */
+    }
+}
+
+/* For screens larger than 768px */
+@media (min-width: 769px) {
+    #brand > div {
+        width: 70vw; /* Adjust width for larger screens */
+        justify-content: space-between; /* Spread items evenly */
+    }
+}
+
+
+#look {
+    height: auto;
+    width: auto;
+    /* border: 2px solid red; */
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    >div:nth-child(1) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        >div {
+            background-image: url(https://boostedusa.com/cdn/shop/files/Boosted-USA-Super-73-Home-Box-feature-600x600_800x.jpg?v=1680836530);
+            background-repeat: no-repeat;
+            background-position: right;
+            background-position: center;
+            width: 30vw;
+            height: 60vh;
+            /* border: 1px solid gray; */
+            transition: background-size 0.5s;
+            background-size: 100%;
+        }
+    }
+
+    >div:nth-child(1)>div:hover {
+        background-size: 110%;
+    }
+
+    >div:nth-child(2) {
+        padding: 20% 20% 0 5%;
+
+        >h2 {
+            font-weight: 600;
+        }
+
+        >button {
+            padding: 5px 20px 5px 20px;
+            border-radius: 10%;
+            color: white;
+            background-color: #ff4a32;
+            border: none;
+        }
+
+        >button:hover {
+            background-color: gray
+        }
+    }
+
+    >div:nth-child(3) {
+        padding: 30% 5% 0 20%;
+
+        /* padding: 20% 20% 0 5%; */
+        >h2 {
+            font-weight: 600;
+        }
+
+        >button {
+            padding: 5px 20px 5px 20px;
+            border-radius: 10%;
+            color: white;
+            background-color: #ff4a32;
+            border: none;
+        }
+
+        >button:hover {
+            background-color: gray;
+        }
+    }
+
+    >div:nth-child(4) {
+        background-image: url(https://boostedusa.com/cdn/shop/files/minimotors-dualtron-speedway-electric-scooters_800x.jpg?v=1655838313);
+        background-repeat: no-repeat;
+        background-position: left;
+    }
+
+    div:nth-child(5) {
+        display: flex;
+        justify-content: right;
+        align-items: center;
+
+        >div {
+            background-image: url(https://boostedusa.com/cdn/shop/files/GTR_Collection_Product_Bamboo_2in1_1_800x.jpg?v=1646160360);
+            background-repeat: no-repeat;
+            background-position: right;
+            background-position: center;
+            width: 40vw;
+            height: 80vh;
+            /* border: 1px solid gray; */
+            transition: background-size 1s;
+            background-size: 100%;
+        }
+    }
+
+
+    div:nth-child(5)>div:hover {
+        background-size: 120%;
+    }
+
+    >div:nth-child(6) {
+        padding: 10% 20% 15% 5%;
+
+        >h2 {
+            font-weight: 600;
+        }
+
+        >button {
+            padding: 5px 20px 5px 20px;
+            border-radius: 10%;
+            color: white;
+            background-color: #ff4a32;
+            border: none;
+        }
+
+        >button:hover {
+            background-color: gray;
+        }
+    }
+}
+
+#look>div {
+    /* border: 1px solid; */
+    height: 90vh;
+}
+
+/* For screens smaller than 768px */
+@media (max-width: 768px) {
+    #look {
+        grid-template-columns: 1fr; /* Change to a single column layout */
+        height: auto;
+    }
+
+    #look > div {
+        padding: 5% 5% 0 5%; /* Adjust padding */
+        /* height: 50vh; */
+        overflow: hidden; 
+    }
+
+    #look > div > div {
+        overflow: hidden; /* Hide overflowing content */
+        overflow-wrap: break-word; /* Break long words and wrap text */
+        height: auto;
+    }
+
+    #look > div:nth-child(1) > div,
+    #look > div:nth-child(4) > div,
+    #look > div:nth-child(5) > div {
+        background-position: center;
+        background-size: cover;
+        width: 100%;
+        height: 50vh;
+    }
+}
+
+/* For screens larger than 768px */
+@media (min-width: 769px) {
+    #look {
+        grid-template-columns: repeat(2, 1fr); /* Adjust columns */
+        /* height: auto; */
+    }
+
+    #look > div > div {
+        overflow: hidden; /* Hide overflowing content */
+    }
+
+    #look > div:nth-child(1) > div,
+    #look > div:nth-child(4) > div,
+    #look > div:nth-child(5) > div {
+        background-size: 100%;
+    }
+}
+
+
+
+/* electoric scooter banner css*/
+
+#eleScooter {
+    display: flex;
+    justify-content: center;
+    /* border: 1px solid gray; */
+    height: 90vh;
+    width: auto;
+    background-image: url(https://boostedusa.com/cdn/shop/files/boosted-rev-display_2000x.jpg?v=1646160921);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position: center;
+
+    >div {
+        padding: 10vh 0 0 0;
+        width: 35vw;
+        text-align: center;
+
+        /* color: black; */
+        >h1 {
+            font-weight: 600;
+        }
+
+        >button {
+            padding: 5px 50px 5px 50px;
+            border-radius: 10%;
+            color: white;
+            background-color: #ff4a32;
+            border: none;
+        }
+
+        >button:hover {
+            background-color: gray
+        }
+    }
+
+}
+
+/* Media query for screens smaller than 768px */
+@media (max-width: 768px) {
+    #eleScooter {
+        height: auto; /* Adjust height as needed */
+        background-size: cover; /* Adjust background size */
+    }
+
+    #eleScooter > div {
+        padding: 10vh 5% 0 5%; /* Adjust padding */
+        width: 90%; /* Adjust width */
+    }
+}
+
+/* youtube video section */
+#youTube {
+
+    /* border: 1px solid red; */
+    height: 90vh;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    >div {
+        /* border: 1px solid black; */
+        width: 80vw;
+        height: 85vh;
+
+    }
+}
+
+/* theBest */
+
+#theBest {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /* border: 1px solid gray; */
+    height: 85vh;
+    width: auto;
+    background-image: url(https://boostedusa.com/cdn/shop/files/evolve-skateboards-1_2000x.jpg?v=1646161047);
+    background-repeat: no-repeat;
+    background-position: right;
+    background-position: center;
+    background-size: 100%;
+
+    >div {
+        /* padding: 10vh 0 0 0; */
+        width: 35vw;
+        text-align: center;
+        color: white;
+
+        >h1 {
+            font-weight: 600;
+        }
+
+        >button {
+            padding: 5px 50px 5px 50px;
+            border-radius: 10%;
+            color: white;
+            background-color: #ff4a32;
+            border: none;
+        }
+
+        >button:hover {
+            background-color: gray
+        }
+    }
+
+}
+
+@media screen and (max-width: 768px) {
+    #theBest {
+        height: 100vh; /* Adjust height for smaller screens */
+    }
+
+    #theBest > div {
+        width: 80%; /* Adjust width for smaller screens */
+    }
+
+    #theBest button {
+        padding: 3px 20px; /* Reduce padding to make the button smaller */
+        font-size: 14px; /* Reduce font size for the button text */
+    }
+}
+
+
+
+#formSec {
+    /* border: 1px solid; */
+    height: 65vh;
+    width: auto;
+    margin-top: 4vh;
+    background-color: #e5e5e5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    >div {
+        width: 25vw;
+        height: 60vh;
+        /* border: 1px solid red; */
+        padding: 2% 0 10% 0;
+
+        >h2 {
+            font-weight: 500;
+        }
+
+        >.form-example {
+
+            >h6 {
+                font-size: x-small;
+                padding: auto;
+                margin: 6% 0;
+            }
+
+            >bottom {
+                padding: 20% 50%;
+            }
+
+        }
+
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #formSec {
+        height: auto; /* Adjust height for smaller screens */
+        width: auto;
+        padding: 5%;
+    }
+
+    #formSec > div {
+        width: auto; /* Adjust width for smaller screens */
+        height: auto; /* Allow height to adjust automatically */
+        padding: auto;
+    }
+
+    #formSec .form-example {
+        margin-top: 4%; /* Add margin at the top of each form element */
+    }
+
+    #formSec input[type="email"] {
+        width: 100%; /* Make the email input field full width */
+    }
+
+    #formSec h6 {
+        font-size: small; /* Adjust font size for the disclaimer text */
+        margin: 4% 0; /* Adjust margin for the disclaimer text */
+    }
+
+    #formSec input.sign {
+        padding: 2% 30%; /* Adjust padding for the submit button */
+    }
+}
+
+
+#black {
+    border: 1px solid;
+    height: 50vh;
+    width: auto;
+    display: flex;
+    background-color: black;
+    justify-content: center;
+    align-items: center;
+
+    >div {
+        /* border: 1px solid red; */
+        height: 40vh;
+        width: 85vw;
+        display: flex;
+
+    }
+}
+
+#black>div>div {
+    /* border: 1px solid white; */
+    width: 30vw;
+    font-size: small;
+    padding: 3%;
+
+}
+
+@media screen and (max-width: 768px) {
+    body{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #black {
+        height: auto; /* Adjust height for smaller screens */
+        padding: 2%; /* Add padding for better spacing */
+    }
+
+    #black > div {
+        flex-direction: column; /* Stack child elements vertically on smaller screens */
+        width: 90vw; /* Adjust width for smaller screens */
+        height: auto;
+        align-items: center;
+    }
+
+    #black > div > div {
+        width: 80vw; /* Make child divs full width on smaller screens */
+        margin-bottom: 4%; /* Add margin between child divs */
+        padding: 2%;
+    }
+}
+
+
+#foot {
+    /* border: 1px solid; */
+    height: 50vh;
+    width: auto;
+    display: flex;
+    justify-content: center;
+    background-color: #f7f7f7;
+
+    >div {
+        /* border: 1px solid red; */
+        height: 60vh;
+        width: 30vw;
+    }
+
+    >div:nth-child(2) {
+        >h5 {
+            font-weight: 600;
+        }
+
+        >p {
+            font-size: medium;
+        }
+
+        padding: 3%;
+    }
+
+    >div:nth-child(3) {
+        >h5 {
+            font-weight: 600;
+        }
+
+        >p {
+            font-size: medium;
+        }
+
+        padding: 3%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #foot {
+        flex-direction: column; /* Stack child elements vertically on smaller screens */
+        height: auto; /* Allow height to adjust based on content */
+        padding: 2%; /* Add padding for better spacing */
+    }
+
+    #foot > div {
+        width: 90%; /* Adjust width for smaller screens */
+        margin-bottom: 4%; /* Add margin between child divs */
+    }
+
+    #foot > div:nth-child(2),
+    #foot > div:nth-child(3) {
+        padding: 2% 5%; /* Add padding to inner content */
+    }
+}
+
+
+#end {
+    /* border: 1px solid red; */
+    height: 10vh;
+    width: auto;
+    display: flex;
+    justify-content: center;
+
+    >div {
+        /* border: 1px solid green; */
+        height: 10vh;
+        width: 50%;
+        font-size: small;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #end {
+        flex-direction: column; /* Stack child elements vertically on smaller screens */
+        height: auto; /* Allow height to adjust based on content */
+        padding: 2%; /* Add padding for better spacing */
+    }
+
+    #end > div {
+        width: 90%; /* Adjust width for smaller screens */
+        margin-bottom: 4%; /* Add margin between child divs */
+        text-align: center; /* Center align text on smaller screens */
+    }
+}
+
+
+
+
+/* css for js fatch data card */
+
+@import url("https://fonts.googleapis.com/css2?family=Lora:wght@400;500;600;700&display=swap");
+
+:root {
+    --white: #ffffff;
+    --white-25: #e5e5e5;
+    --white-50: #f5f5f5;
+    --white-55: #f6f6f6;
+    --black: #353535;
+    --black-25: #5b5b5b;
+    --border-5: 5px;
+    --padding-1: 1rem;
+    --padding-2: 2rem;
+    --padding-3: 3rem;
+    --margin-1: var(--padding-1);
+    --margin-2: var(--padding-2);
+    --margin-3: var(--padding-3);
+}
+
+.material-symbols-rounded {
+    user-select: none;
+    font-variation-settings: "FILL" 0, "wght" 250, "GRAD" 0, "opsz" 48;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: "lora", sans-serif;
+}
+
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: var(--margin-3);
+    width: 100%;
+}
+
+.header__title {
+    margin-bottom: var(--margin-3);
+    font-size: clamp(1rem, 6vw, 2rem);
+    font-weight: 700;
+}
+
+.most-popular-products {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 var(--padding-1);
+    gap: 2rem;
+    width: 100%;
+}
+
+.product-card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    min-width: 250px;
+    width: 100%;
+    max-width: 300px;
+    overflow: hidden;
+    border: 1px solid var(--white-25);
+    border-radius: var(--border-5);
+}
+
+.product-card__container {
+    height: 360px;
+    width: 100%;
+    position: relative;
+    background-color: var(--white-55);
+    overflow: hidden;
+}
+
+.product-card__img {
+    overflow: hidden;
+}
+
+.product-card__img img {
+    position: absolute;
+    width: 100%;
+    transition: transform 4s ease;
+}
+
+.product-card__container:hover img {
+    transform: scale(1.2);
+}
+
+.product-card__btn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 1rem;
+    right: -1rem;
+    width: 40px;
+    height: 40px;
+    background-color: var(--white);
+    border-radius: 50%;
+    color: var(--black-25);
+    z-index: 10;
+    cursor: pointer;
+    opacity: 0;
+    transition: all 0.3s ease, top 0.3s ease 0.2s;
+}
+
+.product-card:hover .product-card__btn {
+    right: 1rem;
+    opacity: 1;
+}
+
+.product-card:hover .product-card__btn.cart {
+    top: calc(1rem + 50px);
+}
+
+.product-card__btn:hover {
+    background-color: var(--black);
+    color: var(--white-25);
+}
+
+.product-card__description {
+    padding: calc(var(--padding-1) / 2) var(--padding-1);
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.2rem;
+    font-size: 1.1rem;
+}
+
+.product-card__color {
+    display: flex;
+    column-gap: 0.5rem;
+    padding: calc(var(--padding-1) / 2) var(--padding-1);
+}
+
+.product-card__btn-radio {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    width: 22px;
+    height: 22px;
+    border-radius: 50%;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.product-card__btn-radio span {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    flex-shrink: 0;
+    border-radius: 50%;
+    transition: all 0.3s ease;
+}
+
+.product-card__btn-radio.selected {
+    border: 1.5px solid var(--black);
+}
+
+.product-card__btn-radio.selected span {
+    width: 15px;
+    height: 15px;
+}
+
+[data-tooltip]::before {
+    content: attr(data-tooltip);
+    position: absolute;
+    background-color: var(--black);
+    padding: 5px 10px;
+    right: calc(100% + 5px);
+    border-radius: var(--border-5);
+    white-space: nowrap;
+    font-size: 0.8rem;
+    color: var(--white);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.3s ease;
+}
+
+[data-tooltip]:hover::before {
+    opacity: 1;
+}

@@ -1,0 +1,173 @@
+{
+    "users" : [
+        {
+          "name" : "disha",
+          "email" : "disha@gmail.com",
+          "id" : 1,
+          "password" : "disha@123"
+        },
+        {
+            "name" : "Pavani",
+            "email" : "pavani@gmail.com",
+            "id" : 2,
+            "password" : "pavani@123"
+          },
+          {
+            "name" : "Ranjnikant",
+            "email" : "rajnikant@gmail.com",
+            "id" : 3,
+            "password" : "rajnikant@123"
+          },
+          {
+            "name" : "Nikita",
+            "email" : "nikita@gmail.com",
+            "id" : 4,
+            "password" : "nikita@123"
+          },
+          {
+            "name" : "Aditya",
+            "email" : "aditya@gmail.com",
+            "id" : 5,
+            "password" : "aditya@123"
+          }
+          
+    ],
+
+
+    "Admin" : [
+      {
+        "name" : "disha",
+        "email" : "dishaadmin@gmail.com",
+        "id" : 1,
+        "password" : "dishaadmin@123"
+      },
+      {
+          "name" : "Pavani",
+          "email" : "pavaniadmin@gmail.com",
+          "id" : 2,
+          "password" : "pavaniadmin@123"
+        },
+        {
+          "name" : "Ranjnikant",
+          "email" : "rajnikantadmin@gmail.com",
+          "id" : 3,
+          "password" : "rajnikantadmin@123"
+        },
+        {
+          "name" : "Nikita",
+          "email" : "nikitaadmin@gmail.com",
+          "id" : 4,
+          "password" : "nikitaadmin@123"
+        },
+        {
+          "name" : "Aditya",
+          "email" : "adityaadmin@gmail.com",
+          "id" : 5,
+          "password" : "adityaadmin@123"
+        }
+        
+  ],
+
+
+
+    
+    
+    
+    
+    
+    
+    "products": [
+    {
+    "productName": "Super73 R Adventure Blackout SE",
+    "price": "3795.00",
+    "id": 1,
+    "image": "https://boostedusa.com/cdn/shop/products/23YM_Z-Blackout_Right_fd46b813-d611-4ce4-ba56-fa67dc5c96a7_1600x.jpg?v=1697496329"
+    },
+    {
+    "productName": "Super73 S Adventure Blackout SE",
+    "price": "3795.00",
+    "id": 2,
+    "image": "https://boostedusa.com/cdn/shop/products/23YM_S2-Blackout_Right_1600x.jpg?v=1697496178"
+    },
+    {
+    "productName": "Super73 Z Adventure Blackout SE",
+    "price": "3095.00",
+    "id": 3,
+    "image": "https://boostedusa.com/cdn/shop/products/23YM_Z-Blackout_Right_1600x.jpg?v=1697495956"
+    },
+    {
+    "productName": "Super73 Z Miami SE",
+    "price": "2295.00",
+    "id": 4,
+    "image": "https://boostedusa.com/cdn/shop/files/LastMile-SF-Marin-Super73-Electric-bikes-2023_ZMiamiSE_Metallic-02_1600x.webp?v=1698944106"
+    },
+    {
+    "productName": "SUPER73-K1D",
+    "price": "1295.00",
+    "id": 5,
+    "image": "https://boostedusa.com/cdn/shop/products/ScreenShot2023-07-22at12.10.44PM_1600x.png?v=1691628915"
+    },
+    {
+    "productName": "Super73 R Adventure Series",
+    "price": "3995.00",
+    "id": 6,
+    "image": "https://boostedusa.com/cdn/shop/files/Super73_YM23_RAdventure_Panthro_Hero_1300x_05718305-22d5-4fcd-88cf-b6dbb5dbaacd_1600x.webp?v=1686608720"
+    },
+    {
+    "productName": "Super73 S Adventure Series",
+    "price": "3595.00",
+    "id": 7,
+    "image": "https://boostedusa.com/cdn/shop/products/SCor_1600x.webp?v=1686853258"
+    },
+    {
+    "productName": "Super73 Z Adventure Series",
+    "price": "2695.00",
+    "id": 8,
+    "image": "https://boostedusa.com/cdn/shop/products/Zpan_1600x.webp?v=1684360021"
+    },
+    {
+    "productName": "Super73 RX Mojave",
+    "price": "2295.00",
+    "id": 9,
+    "image": "https://boostedusa.com/cdn/shop/products/Calikites-LastMile-SF-Super73_RX-Obsidian_Hero_1_1500x1000_b4db2385-4c30-4e73-8061-d3cf2699ac62_1600x.jpg?v=1680799889"
+    },
+    {
+    "productName": "Super73 R-Brooklyn",
+    "price": "3695.00",
+    "id": 10,
+    "image": "https://boostedusa.com/cdn/shop/products/Calikites-LastMile-SF-Super73_R-Olive-Drab_Hero-001_1500x1000_8aff6e7a-3cd1-4f7b-80ec-b5f8c136e6ef_1600x.jpg?v=1680804441"
+    },
+    {
+    "productName": "Super73 ZX Series",
+    "price": "2995.00",
+    "id": 11,
+    "image": "https://boostedusa.com/cdn/shop/products/Calikites-LastMIle-SF-Super73_ZX_Moon_Rock_Three_Quarter_Masked_black_1600x.jpg?v=1680804955"
+    },
+    {
+    "productName": "Super73 Z Miami",
+    "price": "1995.00",
+    "id": 12,
+    "image": "https://boostedusa.com/cdn/shop/products/Calikites-LastMile-SF-Super73_Z-PanthroBlue_Hero_1_1500x1000_8f1df2fe-9c27-41d7-929b-79a1a551d58c_1600x.jpg?v=1680806829"
+    },
+    {
+    "productName": "Super73 S2 Series",
+    "price": "3295.00",
+    "id": 13,
+    "image": "https://boostedusa.com/cdn/shop/products/Calikites-LastMile-SF-Super73_S2-ApolloWhite_Hero-001_1600x.jpg?v=1680805512"
+    },
+    {
+    "productName": "Super73 S1",
+    "price": "2195.00",
+    "id": 14,
+    "image": "https://boostedusa.com/cdn/shop/products/Calikites-LastMile-SF-Super73_S1-White_Hero_01_1500x1000_46f1b1bf-64b0-47df-ae40-c8a77bbaa784_1600x.jpg?v=1680806223"
+    }
+    ]
+    }
+    
+    
+    
+    
+    
+    
+    
+    

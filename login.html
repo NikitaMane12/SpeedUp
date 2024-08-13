@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In</title>
+    <style>
+        .navbar {
+            width: auto;
+
+        }
+
+        .navbar-nav>.nav-item {
+            padding: 0 8px;
+        }
+
+        /* #logo {
+    color: #ed222a;
+    font-size: x-large;
+} */
+
+        .nav-item>a {
+            font-weight: 550;
+            font-size: 15px;
+            padding: 0 20px 0 20px;
+        }
+
+        .navItem:hover {
+            color: #ed222a;
+        }
+
+        .icon {
+            padding: 0 5px;
+
+        }
+
+        /* Basic CSS styling */
+        body {
+            font-family: Arial, sans-serif;
+            /* background-color: #f4f4f4; */
+            margin: 0;
+            padding: 0;
+
+        }
+
+        form {
+            margin-top: 7%;
+            background-color: #fff;
+            margin-left: 45%;
+
+        }
+
+        label {
+            margin-bottom: 10px;
+            display: block;
+            font-weight: bold;
+            font-size: 18px;
+            /* increased label font size */
+        }
+
+        input[type="email"],
+        input[type="password"] {
+            width: 90%;
+            padding: 12px;
+            /* increased input box padding */
+            margin-bottom: 20px;
+            margin-left: 2vw;
+            /* increased input box margin */
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            /* increased input box border radius */
+            box-sizing: border-box;
+            font-size: 16px;
+            /* increased input box font size */
+        }
+
+        #login {
+            background-color: rgb(237, 31, 41);
+            color: white;
+            border: none;
+            border-radius: 15px;
+            padding: 10px;
+        }
+
+        #login:hover {
+            background-color: black;
+        }
+
+        h1 {
+            color: rgb(237, 31, 41);
+        }
+
+        hr {
+            width: 3%;
+            margin-left: 8%;
+        }
+
+        .anchor {
+            color: rgb(237, 31, 41);
+            text-decoration: none;
+        }
+    </style>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <!-- Google fonts icons -->
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js"
+        integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy"
+        crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/95ad4f75b1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+        <div class="container-fluid">
+            <a id="logo" class="navbar-brand" href="#">
+                <img width="80px" height="60px" src="./2.png" alt="">
+                <b> SpeedUp</b></a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li id="navItem" class="nav-item">
+                        <a id="electricBikesLink" class="nav-link active" aria-current="page"
+                            href="./product.html">ELECTRIC
+                            BIKES</a>
+                    </li>
+                    <li class="nav-item">
+                        <a id="getskateboard" class="nav-link active" aria-current="page"
+                            href="#skateboard">SKATEBOARDS</a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">ONEWHEEL</a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a id="getscooters" class="nav-link active" aria-current="page" href="#scooters"> SCOOTERS</a>
+
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">UNICYCLES</a>
+
+                    </li>
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            ACCESSORIES
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="./acceceries.html">Boosted Accessories</a></li>
+                            <li><a class="dropdown-item" href="#">Evolve Skateboard Accessories</a></li>
+                            <li><a class="dropdown-item" href="#">Minimotors Accessories</a></li>
+                            <li><a class="dropdown-item" href="#">Super73 Accessories</a></li>
+                            <li><a class="dropdown-item" href="#">Onewheel Accessories</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">GIFT CARD</a>
+
+                    </li>
+
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                            aria-expanded="false">
+                            MORE INFO
+                        </a>
+                        <ul class="dropdown-menu">
+                            <li><a class="dropdown-item" href="#">Shipping</a></li>
+                            <li><a class="dropdown-item" href="#">FAQs</a></li>
+                            <li><a class="dropdown-item" href="#"> Warranty</a></li>
+                            <li><a class="dropdown-item" href="#">Quick Start Guide</a></li>
+                            <li><a class="dropdown-item" href="#">Contact</a></li>
+                        </ul>
+                    </li>
+
+                </ul>
+            </div>
+
+            <a class="icon" href="#">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="25" fill="currentColor" class="bi bi-search"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001q.044.06.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1 1 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0" />
+                </svg>
+            </a>
+
+            <a class="icon" href="./login.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
+                </svg>
+            </a>
+            <a class="icon" href="./cart.html">
+                <svg xmlns="http://www.w3.org/2000/svg" width="16" height="20" fill="currentColor" class="bi bi-cart"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M0 1.5A.5.5 0 0 1 .5 1H2a.5.5 0 0 1 .485.379L2.89 3H14.5a.5.5 0 0 1 .491.592l-1.5 8A.5.5 0 0 1 13 12H4a.5.5 0 0 1-.491-.408L2.01 3.607 1.61 2H.5a.5.5 0 0 1-.5-.5M3.102 4l1.313 7h8.17l1.313-7zM5 12a2 2 0 1 0 0 4 2 2 0 0 0 0-4m7 0a2 2 0 1 0 0 4 2 2 0 0 0 0-4m-7 1a1 1 0 1 1 0 2 1 1 0 0 1 0-2m7 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2" />
+                </svg>
+            </a>
+        </div>
+
+    </nav>
+    <h1>Customer Login</h1>
+    <hr>
+    <form method="post">
+        <!-- <h2>Sign In</h2> -->
+
+        <label for="email">Email*</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+        <label for="password">Password*</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" required><br>
+        <input type="submit" value="Login" id="login">
+        <p>New Customer? <a class="anchor" href="./signup.html">Sign up</a></p>
+        <a class="anchor" href="./adminlogin.html">Admin login</a>
+    </form>
+</body>
+
+</html>
+<script src="./login.js"></script>
